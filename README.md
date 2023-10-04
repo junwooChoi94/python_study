@@ -17,7 +17,7 @@
      if  n ==1 or n == 2 :
       return memo[n]
      else:
-      memo[n]= n * fib_memozation(n-1, memo)
+      memo[n]= n + fib_memoization(n-1, memo)
       return memo[n]
   
   "'''"
