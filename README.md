@@ -13,7 +13,7 @@
        return fib_recursion(n-1) + fib_recursion(n-2)
    
    memo = {1:1, 2:1} 
-   def fib_memoization(n,memo):
+   def fib_memoization(n):
      if  n in dic :
        return memo[n]
      memo[n]=fib_memoization(n-1)+ fib_memoization(n-2)
