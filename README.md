@@ -6,19 +6,19 @@
    #### - 예시 : 피보나치 수 
   "'''"    
   
-    def fib_recursion(n):
-     if n == 1 or n == 2 :
-      return 1
-     else :
-      return fib_recursion(n-1) + fib_recursion(n-2)
+def fib_recursion(n):
+  if n == 1 or n == 2 :
+    return 1
+  else :
+    return fib_recursion(n-1) + fib_recursion(n-2)
 
-    memo = {1:1, 2:1} 
-    def fib_memoization(n,memo):
-     if  n ==1 or n == 2 :
-      return memo[n]
-     else:
-      memo[n]= n + fib_memoization(n-1, memo)
-      return memo[n]
+memo = {1:1, 2:1} 
+def fib_memoization(n,memo):
+  if  n in dic :
+    return memo[n]
+  memo[n]=fib_memoization(n-1)+ fib_memoization(n-2)
+  return memo[n]
+
   
   "'''"
      
