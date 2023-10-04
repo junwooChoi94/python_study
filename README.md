@@ -8,7 +8,7 @@
   
     def fib_recursion(n):
      if n == 1 or n == 2 :
-      retrun 1
+      return 1
      else :
       return fib(n-1) + fib(n-2)
 
