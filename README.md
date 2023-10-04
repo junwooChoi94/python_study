@@ -10,7 +10,7 @@
      if n == 1 or n == 2 :
       return 1
      else :
-      return fib(n-1) + fib(n-2)
+      return fib_recursion(n-1) + fib_recursion(n-2)
 
     memo = {1:1, 2:1} 
     def fib_memozation(n,memo):
