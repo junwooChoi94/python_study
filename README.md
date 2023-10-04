@@ -15,7 +15,7 @@
     memo = {1:1, 2:1} 
     def fib_memozation(n,memo):
      if  n ==1 or n == 2 :
-      retrun memo[n]
+      return memo[n]
      else:
       memo[n]= n * fib_memozation(n-1, memo)
       return memo[n]
